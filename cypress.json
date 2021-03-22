@@ -1,0 +1,8 @@
+{
+    "testFiles": "**/*.*",
+    "baseUrl": "https://demo.commercetools.com",
+    "env": {
+        "dev": "d",
+        "qa": "q"
+    }
+}
