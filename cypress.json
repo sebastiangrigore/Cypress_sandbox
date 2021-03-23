@@ -1,6 +1,6 @@
 {
     "testFiles": "**/*.*",
-    "baseUrl": "https://demo.commercetools.com",
+    "baseUrl": "https://sunrise.commercetools.com/DE/en/",
     "env": {
         "dev": "d",
         "qa": "q"

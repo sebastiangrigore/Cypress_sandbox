@@ -8,9 +8,9 @@ describe('Sunrise', () => {
     })
 
     it('e2e', () => {
-        cy.visit('/en/home')
+        cy.visit('')
         closeBanner()
-        validateUrlIncludes('home')
+        validateUrlIncludes('commerce')
         logIn()
     // nav to chekout page
         cy.get('.not-empty').click()
