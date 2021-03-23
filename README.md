@@ -1,4 +1,4 @@
-# cypress_cucumber_example
+# Cypress_sandbox
 basic repo for cypress with cucumber presentation
 
 1. clone this repo locally 
