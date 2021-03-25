@@ -4,6 +4,6 @@ Feature: Feature name
 
     Scenario: Visit google
 
-        Given I visit "www.google.com"
-        When I search for "cypress.io automation framework"
-        And I click I feel lucky
+        Given I visit "www.wikipedia.com"
+        When I search for "test automation"
+        Then I verify the title contains "Test automation"

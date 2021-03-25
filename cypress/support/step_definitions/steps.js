@@ -1,6 +1,6 @@
 const { Then, When } = require('cypress-cucumber-preprocessor/steps');
 
-import GooglePage from "../GooglePage"
+import MainPage from "../MainPage"
 
 When('I login', () => {
     cy.visit('https://dv5.tkmaxx.com/uk/en/home/home-accessories/footstools+side-tables/grey-padded-footstool/p/69010131')
@@ -18,17 +18,25 @@ When('I login', () => {
 })
 
 When('I visit {string}', (url) => {
-    GooglePage.visit(url);
+    MainPage.visit(url);
 })
 
 When('I search for {string}', (value) => {
-    GooglePage.search(value)
+    MainPage.search(value)
 })
 
 When('I click I feel lucky', () => {
-    GooglePage.clickFeelLucky();
+    MainPage.clickFeelLucky();
 })
 
-export default GooglePage;
+When('I open the page', () => {
+    MainPage.openThePage();
+})
+
+Then('I verify the title contains {string}', (value) => {
+    MainPage.verifyElementContainsString(value)
+})
+
+export default MainPage;
 
 
