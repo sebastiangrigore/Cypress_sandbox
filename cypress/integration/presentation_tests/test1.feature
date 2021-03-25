@@ -1,8 +1,6 @@
-Feature: Feature name
+Feature: Wikipedia
 
-    Feature Description
-
-    Scenario: Visit google
+    Scenario: Visit wikipedia
 
         Given I visit "www.wikipedia.com"
         When I search for "test automation"
