@@ -16,7 +16,7 @@ context('Window', () => {
   })
 
   it('cy.title() - get the title', () => {
-    // https://on.cypress.io/title
+    // https://on.cypress.io/titledasdasda
     cy.title().should('include', 'Kitchen Sink')
   })
 })
