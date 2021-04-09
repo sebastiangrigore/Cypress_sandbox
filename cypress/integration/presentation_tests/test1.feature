@@ -4,4 +4,4 @@ Feature: Wikipedia
 
         Given I visit "www.wikipedia.com"
         When I search for "test automation"
-        Then I verify the title containsdasdasd "Test automationadsdasdsadaddsaddsa"
+        Then I generate a conflict "sdfdsfgsgdfgfdg"
