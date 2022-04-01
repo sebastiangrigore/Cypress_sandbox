@@ -1,4 +1,4 @@
-const { Then, When } = require('cypress-cucumber-preprocessor/steps');
+const { Given, When, Then } = require('cypress-cucumber-preprocessor/steps');
 
 import MainPage from "../MainPage"
 
@@ -23,7 +23,7 @@ Then('I verify the title contains {string}', (value) => {
     MainPage.verifyElementContainsString(value)
 })
 
-When('I click on {string}', (value) => {
+Given('I click on {string}', (value) => {
     MainPage.clickElement(value)
 })
 

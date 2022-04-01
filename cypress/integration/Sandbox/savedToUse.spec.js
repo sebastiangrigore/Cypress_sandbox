@@ -1,6 +1,6 @@
 ///<reference types="Cypress"/>
 
-describe('', ()=>{
+describe('test1', ()=>{
     it('', ()=>{
         cy.get('[data-cy="someInput"]').as('input')
         cy.get('@input').then($input =>{
@@ -29,5 +29,11 @@ describe('', ()=>{
 
         cy.stub(api, 'getUser')
             .returns({name:'Kim'})
+    })
+})
+
+describe('sandbox', () => {
+    it('will check a page', () => {
+        cy.visit("")
     })
 })
