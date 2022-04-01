@@ -1,6 +1,6 @@
 class MainPage {
   static visit(url) {
-    cy.visit(url);
+    cy.visit(url).debug()
   }
 
   static search(value) {
@@ -21,7 +21,10 @@ class MainPage {
   }
 
   static clickElement(element) {
-    cy.get(element).click();
+    if (element.includes('//')) {
+      cy.xpath(element).first().click();
+    } else cy.get(element).get().first().click();
+    cy.get(element).should('have')
   }
 
 }

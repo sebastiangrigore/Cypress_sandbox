@@ -5,6 +5,8 @@ context('Utilities', () => {
     cy.visit('https://example.cypress.io/utilities')
   })
 
+  describe
+
   it('Cypress._ - call a lodash method', () => {
     // https://on.cypress.io/_
     cy.request('https://jsonplaceholder.cypress.io/users')
