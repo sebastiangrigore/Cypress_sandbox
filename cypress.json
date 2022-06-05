@@ -1,8 +1,0 @@
-{
-    "testFiles": "**/*.*",
-    "baseUrl": "https://www.google.com/",
-    "env": {
-        "dev": "d",
-        "qa": "q"
-    }
-}
